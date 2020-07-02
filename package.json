@@ -1,0 +1,30 @@
+{
+    "name": "@azleur/mat2",
+    "version": "0.0.0",
+    "author": "azleur",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Azleur/mat2.git"
+    },
+    "homepage": "https://github.com/Azleur/mat2",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "rm -rf dist && tsc && uglifyjs dist/index.js --compress --output dist/index.js"
+    },
+    "devDependencies": {
+        "@types/jest": "^25.2.3",
+        "jest": "^26.0.1",
+        "ts-jest": "^26.0.0",
+        "typescript": "^3.9.3",
+        "uglify-js": "^3.9.3"
+    },
+    "dependencies": {
+        "@azleur/vec2": "^0.2.1"
+    }
+}
